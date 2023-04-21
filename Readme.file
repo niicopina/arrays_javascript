@@ -1,0 +1,11 @@
+Inmutabilidad y Mutabilidad
+conceptos propios de programacion 
+
+la Inmutabilidad te sirve para eliminar los efectos colaterales.
+ Quiere decir que si ejecutas un metodo de una variable, 
+ y este metodo es inmutable la variable por siu misma no va a cambiar sus atributos, 
+lo que sucedera es que el metodo creara una nueva copia de la misma y te la regresará.
+También la inmutabilidad va ligado al concepto de función pura: esta es una funcion que no tiene efectos
+colaterales con elementos externos y por lo cual solo depende de los elementos de entrada que recibe, es decir
+estos elementos regresaran algo pero no va a modificar nada que sea externo a la funcion.
+Esta es importante ya que la funcion puede ser reemplazada si tienes una funcion con mejor funcionalidad.
