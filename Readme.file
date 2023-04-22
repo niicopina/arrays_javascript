@@ -1,3 +1,12 @@
+Concepto de funcion de orden superior
+Esto es practicamente una funcion que pueda recibir otras funciones como parametro
+o retornar funciones como resultado.
+Estas funciones receptores deberian recibir funciones de primer orden
+Javascript tiene el paradigma funcional
+
+
+
+
 Inmutabilidad y Mutabilidad
 conceptos propios de programacion 
 
