@@ -4,12 +4,13 @@ o retornar funciones como resultado.
 Estas funciones receptores deberian recibir funciones de primer orden
 Javascript tiene el paradigma funcional
 
+Operador de propagacion
+Este trabaja sobre objetos iterados(arreglos, strings), donde se pueda hacer secuenciacion de elementos..
 
 
 
 Inmutabilidad y Mutabilidad
-conceptos propios de programacion 
-
+(conceptos propios de programacion )
 la Inmutabilidad te sirve para eliminar los efectos colaterales.
  Quiere decir que si ejecutas un metodo de una variable, 
  y este metodo es inmutable la variable por siu misma no va a cambiar sus atributos, 
