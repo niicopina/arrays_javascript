@@ -44,7 +44,7 @@ let negra = {
     callback: function(){
         console.log('bebe como albañil en verano')
     },
-    beer: [],
+    beers: [],
     liquid: 0,
     drink: function(beer, otherAction){
         this.beers.push(beer)
@@ -65,3 +65,8 @@ let negra = {
         console.log('se sienta en su mesa nuevamente')
     }
 }
+negra.drink(beer1)
+negra.drink(beer2)
+negra.drink(beer1, function(){console.log('pide un vaso de agua')})
+negra.drink(beer3)
+negra.drink(beer1)
