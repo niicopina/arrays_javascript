@@ -8,7 +8,7 @@ class Drunk {
     drink(beer){
         this.beers.push(beer)
         this.liquid += beer.quantity
-        console.log(this.name + "ha bebido una cerveza" + beer.name + " liquido en el cuerpo " + this.liquid)
+        console.log(this.name + " ha bebido una pinta de " + beer.name + " liquido en el cuerpo " + this.liquid)
         if(this.liquid >= this.limit){
             this.discharge()
         }
@@ -18,5 +18,15 @@ class Drunk {
         this.liquid = 0
     }
 }
-let hector = new Drunk('Hector')
-console.log(hector.name)
+
+beer1 = {name: 'Scotch', quantity: 750}
+beer2 = {name: 'Red Ipa', quantity: 750}
+beer3 = {name: 'Ipa', quantity: 500}
+
+let nico = new Drunk('Nico', 2000)
+nico.drink(beer1)
+nico.drink(beer2)
+nico.drink(beer1)
+nico.drink(beer3)
+nico.drink(beer1)
+nico.drink(beer2)
