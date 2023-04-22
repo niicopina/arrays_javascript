@@ -1,4 +1,5 @@
 let beers = ['Andes', 'Corona', 'Patagonia', 'Salta']
+let wines = ['Luigi Bosca', 'Nieto Senetiner', 'Trumpeter', 'Benjamin']
 
 //metodo MUTABLE - modifican el estado
 beers.push('Heineken')
@@ -9,11 +10,12 @@ let b = beers.pop() //regresa el ultimo elemento pero lo elimina
 let b2 = beers.shift() //regresa el primer elemento pero lo elimina
 
 //metodo INMUTABLE
+const alcoholDrinks = beers.concat(wines)
+alcoholDrinks.push('Callia')
 
+showDom('array1', beers)
+showDom('array2', alcoholDrinks)
 
-
-
-showDom('array1', numbers)
 
 function show(arr){
     for(let i=0; i<arr.length; i++){
