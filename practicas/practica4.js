@@ -29,6 +29,8 @@ const beers2 = beers.map(element => { //metodo inmutable para crear una nueva co
     }
 })
 
+const sum = beers.reduce((acc, curr) => acc + curr.price, 0)
+console.log(sum)
 
 /* let fn = (e) => e.price > 0; //esto es una condicionante que devuelve un booleano
 console.log(beers.every(fn)) */
