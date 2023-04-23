@@ -20,8 +20,18 @@ const beers = [{
     }
 ]
 
-let fn = (e) => e.price > 0; //esto es una condicionante que devuelve un booleano
-console.log(beers.every(fn))
+const beers2 = beers.map(element => { //metodo inmutable para crear una nueva coleccion a partir de la original
+                                    // map regresa un array, con lo elementos que quieras
+    return {
+        name: element.name,
+        price: element.price * 1.21,
+        alcohol: element.alcohol
+    }
+})
+
+
+/* let fn = (e) => e.price > 0; //esto es una condicionante que devuelve un booleano
+console.log(beers.every(fn)) */
 //Podemos usar beers.some si queremos saber si alguno no cumple con una condicion, muy util para filtrar 
 //algun error dentro de los campos requeridos tal vez
 
