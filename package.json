@@ -1,0 +1,26 @@
+{
+  "name": "arrays",
+  "version": "1.0.0",
+  "description": "Concepto de funcion de orden superior\r Esto es practicamente una funcion que pueda recibir otras funciones como parametro\r o retornar funciones como resultado.\r Estas funciones receptores deberian recibir funciones de primer orden\r Javascript tiene el paradigma funcional",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niicopina/arrays_javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niicopina/arrays_javascript/issues"
+  },
+  "homepage": "https://github.com/niicopina/arrays_javascript#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
