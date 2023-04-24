@@ -8,7 +8,6 @@ Operador de propagacion
 Este trabaja sobre objetos iterados(arreglos, strings), donde se pueda hacer secuenciacion de elementos..
 
 
-
 Inmutabilidad y Mutabilidad
 (conceptos propios de programacion )
 la Inmutabilidad te sirve para eliminar los efectos colaterales.
@@ -19,3 +18,11 @@ También la inmutabilidad va ligado al concepto de función pura: esta es una fu
 colaterales con elementos externos y por lo cual solo depende de los elementos de entrada que recibe, es decir
 estos elementos regresaran algo pero no va a modificar nada que sea externo a la funcion.
 Esta es importante ya que la funcion puede ser reemplazada si tienes una funcion con mejor funcionalidad.
+
+Normalmente en la programacion se intenta darle responsabilidades unicas a las funciones
+que sea lo mas abstracto posible
+Si queremos tener más campos dentro de la funcion printClosure, debemos usar Reduce
+Reducee es una funcion que recorre una coleccion y regresa un valor escalar, que va a ser un
+acumulativo de algun procedimiento sobre los elementos que iteran uno a uno, como por ej una concatenacion
+Readuce() recibe una funcion de 1er orden, pero tiene que ser de dos parametros: acc y elemento, y como 
+segundo parametro se pone un valor inicial ((acc, e)=>acc + elements + ' ', '')
