@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Concepto de funcion de orden superior\r Esto es practicamente una funcion que pueda recibir otras funciones como parametro\r o retornar funciones como resultado.\r Estas funciones receptores deberian recibir funciones de primer orden\r Javascript tiene el paradigma funcional",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node ./server.js",
+    "dev": "nodemon ./server.js"
   },
   "repository": {
     "type": "git",
