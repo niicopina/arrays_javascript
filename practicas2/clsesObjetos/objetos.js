@@ -17,6 +17,20 @@ class People{
         return this.name + ' ' + this.lastName
     }
 }
+//HERENCIA - debe recibir las cualidades de People
+class Student extends People{
+    constructor(name, lastName, career){
+        super(name, lastName)
+        this.career = career
+    }
+    hi(){
+        return super.hi() + ' y estudio ' + this.career
+    }
+    careerDetail(){
+        return 'Estudia ' + this.career
+    }
+}
+
 const hector = new People('Hector', 'de Leon') //por orden de aparicion se asigna al valor del constructor
 console.log(hector)
 console.log(hector.hi())
@@ -24,3 +38,9 @@ console.log(hector.fullName())
 
 const pedro = new People('Pedro', 'Perez')
 console.log(pedro.hi())
+
+//Objeto HIJO
+const maria = new Student('Maria', 'Guevara', 'Ingenieria')
+console.log(maria.hi())
+console.log(maria.fullName())
+console.log(maria.careerDetail())
