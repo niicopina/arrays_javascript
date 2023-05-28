@@ -1,0 +1,13 @@
+{
+    "name": "Hector de Leon",
+    "email": "unmail@mail.com",
+    "site": "http://wwww",
+    "skills": [
+        "backend", "frontend", "iot"
+    ],
+    "adress": {
+        "city": "guadalajara",
+        "region": "jalisco",
+        "country": "mexico"
+    }
+}
