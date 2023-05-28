@@ -26,11 +26,15 @@ function some2(fn, num1, num2){
     console.log('se hace algo antes')
 
     const res = fn(num1, num2)
-    console.log('el resputado es: ', res)
+    console.log('el ressultado es: ', res)
 }
 
-const consultarApi = async() => {
-    const [res, res2] = await Promise.all([fetch('url'), fetch('url2')])
-    const resultado = await res.json()
-    const resultado2 = await res2.json()
-}
+some2(s, 2, 3)
+
+some2(function(a,b){
+    return a * b
+}, 6, 2)
+
+some2((a,b)=>{
+    return a * b
+}, 10, 20)
