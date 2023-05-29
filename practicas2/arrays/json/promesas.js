@@ -8,6 +8,18 @@ const myPromise = new Promise((res, rej)=> {
     }, 1500)
 })
 
-myPromise
+/* myPromise
     .then(data => console.log('El dato retornado por la promesa es: ' + data))
-    .catch(error=> console.error(error))
+    .catch(error=> console.error(error)) */
+
+//API fetch promesa
+/* fetch("https://jsonplaceholder.typicode.com/users")
+    .then(data => data.json())
+    .then(json => console.log(json));
+ */
+/* (function(){
+    console.log('es ima iofe')
+})(); */
+(async function(){
+    const dataResult = await fetch("https://jsonplaceholder.typicode.com/users")
+})();
