@@ -28,7 +28,7 @@ console.log(stack.peek())
 console.log(stack.size())
 console.log(stack.isEmpty())
 
-while(!stack.isEmpty()){
+/* while(!stack.isEmpty()){
     console.log(stack.pop())
     return
-}
+} */
