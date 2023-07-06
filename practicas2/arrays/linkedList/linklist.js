@@ -25,7 +25,18 @@ class LinkedList{
         }
     }
     delete(value){
-        
+        if(this.head.value === value){
+            this.head = this.head.next
+        }else{
+            let current = this.head
+            while(current.next !== null){
+                if(current.next.value === value){
+                    current.next = current.next.next
+                    break
+                }
+                current = current.next
+            }
+        }
     }
     show(){
         let current = this.head
@@ -53,5 +64,8 @@ linkedList.add('A')
 linkedList.add('B')
 linkedList.add('C')
 linkedList.add('D')
+console.log(linkedList.size())
+linkedList.show()
+linkedList.delete('B')
 console.log(linkedList.size())
 linkedList.show()
